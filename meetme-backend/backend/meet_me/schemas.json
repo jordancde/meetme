@@ -1,0 +1,398 @@
+{
+    "create-owner": {
+        "$id": "create-owner",
+        "type": "object",
+        "properties": {
+            "email": {
+                "$id": "/properties/email",
+                "type": "string",
+                "title": "The Email Schema ",
+                "default": "",
+                "examples": [
+                    "test@email.com"
+                ]
+            },
+            "first_name": {
+                "$id": "/properties/first_name",
+                "type": "string",
+                "title": "The First_name Schema ",
+                "default": "",
+                "examples": [
+                    "rj"
+                ]
+            },
+            "last_name": {
+                "$id": "/properties/last_name",
+                "type": "string",
+                "title": "The Last_name Schema ",
+                "default": "",
+                "examples": [
+                    "woo"
+                ]
+            }
+        },
+        "required": [
+            "email",
+            "first_name",
+            "last_name"
+        ]
+    },
+    "create-asset": {
+        "$id": "create-asset",
+        "type": "object",
+        "properties": {
+            "name": {
+                "$id": "/properties/name",
+                "type": "string",
+                "title": "The Name Schema ",
+                "default": "",
+                "examples": [
+                    "Big Ball"
+                ]
+            },
+            "serial": {
+                "$id": "/properties/serial",
+                "type": "string",
+                "title": "The Serial Schema ",
+                "default": "",
+                "examples": [
+                    "fwaefew98faewf"
+                ]
+            },
+            "description": {
+                "$id": "/properties/description",
+                "type": "string",
+                "title": "The Description Schema ",
+                "default": "",
+                "examples": [
+                    "it's a big ball"
+                ]
+            },
+            "original_owner_email": {
+                "$id": "/properties/original_owner_email",
+                "type": "string",
+                "title": "The Original_owner_email Schema ",
+                "default": "",
+                "examples": [
+                    "jordan@email.com"
+                ]
+            },
+            "current_owner_email": {
+                "$id": "/properties/current_owner_email",
+                "type": "string",
+                "title": "The Current_owner_email Schema ",
+                "default": "",
+                "examples": [
+                    "jordan@email.com"
+                ]
+            },
+            "image": {
+                "$id": "/properties/image",
+                "type": "string",
+                "title": "The image Schema ",
+                "default": "",
+                "examples": [
+                    ""
+                ]
+            }
+        },
+        "required": [
+            "name",
+            "serial",
+            "original_owner_email",
+            "current_owner_email"
+        ]
+    },
+    "submit-transfer": {
+        "$id": "submit-transfer",
+        "type": "object",
+        "properties": {
+            "email": {
+                "$id": "/properties/email",
+                "type": "string",
+                "title": "The Email Schema ",
+                "default": "",
+                "examples": [
+                    "jordan@email.com"
+                ]
+            },
+            "uuid": {
+                "$id": "/properties/uuid",
+                "type": "string",
+                "title": "The Uuid Schema ",
+                "default": "",
+                "examples": [
+                    "067b3285-1f14-40a2-ae38-2ecb5541216a"
+                ]
+            }
+        },
+        "required": [
+            "email",
+            "uuid"
+        ]
+    },
+    "set-permission": {
+        "$id": "set-permission",
+        "type": "object",
+        "properties": {
+            "email": {
+                "$id": "/properties/email",
+                "type": "string",
+                "title": "The Email Schema ",
+                "default": "",
+                "examples": [
+                    "jordan@email.com"
+                ]
+            },
+            "xd": {
+                "$id": "/properties/name",
+                "type": "string",
+                "title": "The name Schema ",
+                "default": ""
+            },
+            "status": {
+                "$id": "/properties/status",
+                "type": "boolean",
+                "title": "The status Schema ",
+                "default": false,
+                "examples": [
+                    true
+                ]
+            }
+        },
+        "required": [
+            "email",
+            "name"
+        ]
+    },
+    "update-owner": {
+        "$id": "update-owner",
+        "type": "object",
+        "properties": {
+            "email": {
+                "$id": "/properties/email",
+                "type": "string",
+                "title": "The Email Schema ",
+                "default": "",
+                "examples": [
+                    "test@email.com"
+                ]
+            },
+            "first_name": {
+                "$id": "/properties/first_name",
+                "type": "string",
+                "title": "The First_name Schema ",
+                "default": "",
+                "examples": [
+                    "rj"
+                ]
+            },
+            "last_name": {
+                "$id": "/properties/last_name",
+                "type": "string",
+                "title": "The Last_name Schema ",
+                "default": "",
+                "examples": [
+                    "woo"
+                ]
+            }
+        }
+    },
+    "update-asset": {
+        "$id": "update-asset",
+        "type": "object",
+        "properties": {
+            "name": {
+                "$id": "/properties/name",
+                "type": "string",
+                "title": "The Name Schema ",
+                "default": "",
+                "examples": [
+                    "Big Ball"
+                ]
+            },
+            "serial": {
+                "$id": "/properties/serial",
+                "type": "string",
+                "title": "The Serial Schema ",
+                "default": "",
+                "examples": [
+                    "fwaefew98faewf"
+                ]
+            },
+            "description": {
+                "$id": "/properties/description",
+                "type": "string",
+                "title": "The Description Schema ",
+                "default": "",
+                "examples": [
+                    "it's a big ball"
+                ]
+            },
+            "image": {
+                "$id": "/properties/image",
+                "type": "string",
+                "title": "The image Schema ",
+                "default": "",
+                "examples": [
+                    ""
+                ]
+            }
+        }
+    },
+    "user-register": {
+        "$id": "user-register",
+        "type": "object",
+        "properties": {
+            "username": {
+                "$id": "/properties/username",
+                "type": "string",
+                "title": "The Username Schema ",
+                "default": "",
+                "examples": [
+                    "hunter"
+                ]
+            },
+            "email": {
+                "$id": "/properties/email",
+                "type": "string",
+                "title": "The Email Schema ",
+                "default": "",
+                "examples": [
+                    "example@test.com"
+                ]
+            },
+            "first_name": {
+                "$id": "/properties/first_name",
+                "type": "string",
+                "title": "The First Name Schema ",
+                "default": "",
+                "examples": [
+                    "Frank"
+                ]
+            },
+            "last_name": {
+                "$id": "/properties/last_name",
+                "type": "string",
+                "title": "The Last Name Schema ",
+                "default": "",
+                "examples": [
+                    "Shah"
+                ]
+            },
+            "password": {
+                "$id": "/properties/password",
+                "type": "string",
+                "title": "The Password Schema ",
+                "default": "",
+                "examples": [
+                    "password"
+                ]
+            }
+        },
+        "required": [
+            "username",
+            "email",
+            "first_name",
+            "last_name",
+            "password"
+        ]
+    },
+    "user-patch": {
+        "$id": "user-patch",
+        "type": "object",
+        "properties": {
+            "email": {
+                "$id": "/properties/email",
+                "type": "string",
+                "title": "The Email Schema ",
+                "default": "",
+                "examples": [
+                    "example@test.com"
+                ]
+            },
+            "first_name": {
+                "$id": "/properties/first_name",
+                "type": "string",
+                "title": "The First Name Schema ",
+                "default": "",
+                "examples": [
+                    "Frank"
+                ]
+            },
+            "last_name": {
+                "$id": "/properties/last_name",
+                "type": "string",
+                "title": "The Last Name Schema ",
+                "default": "",
+                "examples": [
+                    "Shah"
+                ]
+            }
+        }
+    },
+    "check-active": {
+        "$id": "check-active",
+        "type": "object",
+        "properties": {
+            "username": {
+                "$id": "/properties/username",
+                "type": "string",
+                "title": "The Username Schema ",
+                "default": "",
+                "examples": [
+                    "hunter"
+                ]
+            },
+            "password": {
+                "$id": "/properties/password",
+                "type": "string",
+                "title": "The Password Schema ",
+                "default": "",
+                "examples": [
+                    "password"
+                ]
+            }
+        },
+        "required": [
+            "username",
+            "password"
+        ]
+    },
+    "reset-password": {
+        "$id": "reset-password",
+        "type": "object",
+        "properties": {
+            "password": {
+                "$id": "/properties/password",
+                "type": "string",
+                "title": "The Password Schema ",
+                "default": "",
+                "examples": [
+                    "pa$$w0rd"
+                ]
+            }
+        },
+        "required": [
+            "password"
+        ]
+    },
+    "send-forgot-password-email": {
+        "$id": "send-forgot-password-email",
+        "type": "object",
+        "properties": {
+            "email": {
+                "$id": "/properties/email",
+                "type": "string",
+                "title": "The Email Schema ",
+                "default": "",
+                "examples": [
+                    "example@test.com"
+                ]
+            }
+        },
+        "required": [
+            "email"
+        ]
+    }
+}
