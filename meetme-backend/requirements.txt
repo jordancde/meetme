@@ -19,7 +19,7 @@ django-registration-redux==2.4
 django-rest-registration==0.3.12
 django-ses==0.8.5
 django-webpack-loader==0.6.0
-djangorestframework==3.8.2
+djangorestframework==3.11.2
 forex-python==1.1
 future==0.16.0
 idna==2.7
