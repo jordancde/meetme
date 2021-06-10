@@ -9,7 +9,7 @@ cchardet==2.1.1
 ccxt==1.15.15
 certifi==2018.4.16
 chardet==3.0.4
-Django==2.0.7
+Django==2.2.24
 django-background-tasks==1.1.13
 django-braces==1.13.0
 django-compat==1.0.15
